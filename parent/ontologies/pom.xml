@@ -15,6 +15,18 @@
 	<build>
 		<plugins>
 			<plugin>
+				<groupId>${project.plugin.groupId}</groupId>
+				<artifactId>ontogen-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>default-ontogen</id>
+						<goals>
+							<goal>ontogen</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- <plugin>
 				<groupId>org.apache.jena</groupId>
 				<artifactId>jena-maven-tools</artifactId>
 				<executions>
@@ -26,7 +38,7 @@
 						</goals>
 						<configuration>
 							<includes>
-								<!-- <include>http://dublincore.org/2012/06/14/dcelements.rdf</include> -->
+								<include>http://dublincore.org/2012/06/14/dcelements.rdf</include>
 								<include>src/main/resources/ontology/dcelements-2012-06-14.rdf</include>
 							</includes>
 							<fileOptions>
@@ -48,7 +60,7 @@
 						</goals>
 						<configuration>
 							<includes>
-								<!-- <include>http://dublincore.org/2012/06/14/dcterms.rdf</include> -->
+								<include>http://dublincore.org/2012/06/14/dcterms.rdf</include>
 								<include>src/main/resources/ontology/dcterms-2012-06-14.rdf</include>
 							</includes>
 							<fileOptions>
@@ -70,7 +82,7 @@
 						</goals>
 						<configuration>
 							<includes>
-								<!-- <include>http://dublincore.org/2012/06/14/dctype.rdf</include> -->
+								<include>http://dublincore.org/2012/06/14/dctype.rdf</include>
 								<include>src/main/resources/ontology/dctype-2012-06-14.rdf</include>
 							</includes>
 							<fileOptions>
@@ -92,7 +104,7 @@
 						</goals>
 						<configuration>
 							<includes>
-								<!-- <include>http://xmlns.com/foaf/spec/index.rdf</include> -->
+								<include>http://xmlns.com/foaf/spec/index.rdf</include>
 								<include>src/main/resources/ontology/foaf-0.1.rdf</include>
 							</includes>
 							<fileOptions>
@@ -114,7 +126,7 @@
 						</goals>
 						<configuration>
 							<includes>
-								<!-- <include>http://www.geonames.org/ontology/ontology_v3.1.rdf</include> -->
+								<include>http://www.geonames.org/ontology/ontology_v3.1.rdf</include>
 								<include>src/main/resources/ontology/gn-3.1.rdf</include>
 							</includes>
 							<fileOptions>
@@ -136,7 +148,7 @@
 						</goals>
 						<configuration>
 							<includes>
-								<!-- <include>http://www.w3.org/TR/skos-reference/skos.rdf</include> -->
+								<include>http://www.w3.org/TR/skos-reference/skos.rdf</include>
 								<include>src/main/resources/ontology/skos-2004-02.rdf</include>
 							</includes>
 							<fileOptions>
@@ -158,7 +170,7 @@
 						</goals>
 						<configuration>
 							<includes>
-								<!-- <include>https://www.w3.org/2006/vcard/vcard.xml https://www.w3.org/2006/vcard/vcard2rdf.xsl</include> -->
+								<include>https://www.w3.org/2006/vcard/vcard.xml https://www.w3.org/2006/vcard/vcard2rdf.xsl</include>
 								<include>src/main/resources/ontology/vcard-2006.rdf</include>
 							</includes>
 							<fileOptions>
@@ -173,7 +185,7 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin> -->
 		</plugins>
 	</build>
 </project>
